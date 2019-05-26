@@ -1,0 +1,27 @@
+<!-- Fichier play.html qui contient le code HTML de la page du menu et du plateau de jeu -->
+
+
+<!Doctype html>
+<html lang="fr">
+  <head>
+    <title>Play</title>
+    <meta name="play" content="Jeu de dames en ligne">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/menu.css">
+    <link rel="stylesheet" href="/plateau.css">
+    <link rel="stylesheet" href="/common.css">
+    <script src="/client.js" defer></script>
+  </head>
+  
+  <body>
+    <br> <!-- Affichage du bouton de deconnexion -->
+    <form id="boutonDeconnexion" method="POST" action="/logout">
+      <input class="button-deconnexion" type="submit" value="Se déconnecter">
+    </form>
+    
+    <br>
+    <span id="boutonAbandon"></span>
+    <span id="users"></span>
+  </body>
+  
+</html>

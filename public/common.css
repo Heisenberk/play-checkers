@@ -1,0 +1,11 @@
+/* Fichier common.css qui comprend le style pour les elements communs a toutes les pages du site */
+
+/* style pour le bouton de deconnexion */
+.button-deconnexion {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}

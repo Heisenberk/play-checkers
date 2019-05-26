@@ -1,0 +1,48 @@
+<!-- Fichier connexion.html qui contient le code HTML de la page de connexion -->
+
+<!DOCTYPE html>
+<html lang="fr">
+  
+  <head>
+    <title>Connexion</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="connexion.css">
+    <script src="/connexion.js" defer></script>
+  </head>
+ 
+  <body>
+    <div id="header">
+      <h1>
+        <!-- Affichage du logo -->
+        <h1> 
+          <img src="https://cdn.glitch.com/1d86ef9d-927e-4286-8a18-18b67c18b0f7%2Flogo.png?1556655704010" class="img" />
+        </h1> 
+      
+        <!-- Formulaire de connexion -->
+        <div id="formulaire_login">
+          <form method="POST" action="/login" id="formLogin">
+            <p id="au_dessus_login">Login:</p>
+            <input type="text" id="login" required name="login" >
+            <p id="au_dessus_password">Password:</p>
+            <input type="password" required name="password" id="password"><br>
+            <input type="submit" value="Se Connecter"  onclick="getLogin()" id="submit">
+          </form>
+        </div>
+      </h1>
+    </div>
+    
+    <!-- Formulaire d'inscription -->
+    <div id="conteneur">   
+      <form method="POST" action="/signin" id="formSignin">
+        <center>Username:
+          <input type="text" required name="login"><br>Prénom:  
+          <input type="text" required name="prenom"><br>Nom:
+          <input type="text" required name="nom"><br>Password:
+          <input type="password" required name="password"><br>
+          <input type="submit" value="S'inscrire" id="inscrire">
+        </center>
+      </form>
+    </div>
+
+  </body>
+</html>
